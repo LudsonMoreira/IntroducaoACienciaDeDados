@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados de Clientes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        
+        .container {
+            overflow-x: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        
+        th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+        }
+        
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .churn-sim {
+            color: #d32f2f;
+            font-weight: bold;
+        }
+        
+        .churn-nao {
+            color: #388e3c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Base de Dados de Clientes</h1>
+    
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Idade</th>
+                    <th>Gênero</th>
+                    <th>Cidade</th>
+                    <th>Estado</th>
+                    <th>Renda Mensal</th>
+                    <th>Tempo Cliente (meses)</th>
+                    <th>Freq. Compras/Mês</th>
+                    <th>Valor Médio Compra</th>
+                    <th>Canal Preferido</th>
+                    <th>Categoria Preferida</th>
+                    <th>Satisfação</th>
+                    <th>Churn</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>22</td><td>F</td><td>São Paulo</td><td>SP</td><td>R$ 2.500</td><td>6</td><td>4</td><td>R$ 90</td><td>App</td><td>Moda</td><td>2</td><td class="churn-sim">Sim</td></tr>
+                <tr><td>2</td><td>35</td><td>M</td><td>Campinas</td><td>SP</td><td>R$ 6.200</td><td>28</td><td>2</td><td>R$ 240</td><td>Online</td><td>Eletrônicos</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>3</td><td>48</td><td>F</td><td>Belo Horizonte</td><td>MG</td><td>R$ 7.800</td><td>45</td><td>1</td><td>R$ 380</td><td>Loja Física</td><td>Casa</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>4</td><td>29</td><td>M</td><td>Curitiba</td><td>PR</td><td>R$ 4.200</td><td>18</td><td>3</td><td>R$ 160</td><td>App</td><td>Esportes</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>5</td><td>55</td><td>F</td><td>Porto Alegre</td><td>RS</td><td>R$ 9.500</td><td>60</td><td>1</td><td>R$ 520</td><td>Loja Física</td><td>Decoração</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>6</td><td>31</td><td>F</td><td>Recife</td><td>PE</td><td>R$ 3.900</td><td>20</td><td>2</td><td>R$ 180</td><td>Online</td><td>Beleza</td><td>3</td><td class="churn-nao">Não</td></tr>
+                <tr><td>7</td><td>24</td><td>M</td><td>Salvador</td><td>BA</td><td>R$ 2.700</td><td>8</td><td>4</td><td>R$ 110</td><td>App</td><td>Moda</td><td>2</td><td class="churn-sim">Sim</td></tr>
+                <tr><td>8</td><td>41</td><td>M</td><td>São Paulo</td><td>SP</td><td>R$ 7.100</td><td>36</td><td>2</td><td>R$ 290</td><td>Online</td><td>Eletrônicos</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>9</td><td>37</td><td>F</td><td>Rio de Janeiro</td><td>RJ</td><td>R$ 6.500</td><td>32</td><td>2</td><td>R$ 260</td><td>Online</td><td>Casa</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>10</td><td>62</td><td>M</td><td>Santos</td><td>SP</td><td>R$ 11.000</td><td>72</td><td>1</td><td>R$ 600</td><td>Loja Física</td><td>Casa</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>11</td><td>21</td><td>F</td><td>Osasco</td><td>SP</td><td>R$ 2.300</td><td>5</td><td>5</td><td>R$ 80</td><td>App</td><td>Moda</td><td>2</td><td class="churn-sim">Sim</td></tr>
+                <tr><td>12</td><td>44</td><td>M</td><td>Campinas</td><td>SP</td><td>R$ 8.200</td><td>40</td><td>1</td><td>R$ 420</td><td>Loja Física</td><td>Eletrônicos</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>13</td><td>28</td><td>F</td><td>Florianópolis</td><td>SC</td><td>R$ 5.200</td><td>22</td><td>3</td><td>R$ 170</td><td>Online</td><td>Esportes</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>14</td><td>34</td><td>M</td><td>Ribeirão Preto</td><td>SP</td><td>R$ 6.100</td><td>27</td><td>2</td><td>R$ 240</td><td>Online</td><td>Eletrônicos</td><td>3</td><td class="churn-nao">Não</td></tr>
+                <tr><td>15</td><td>39</td><td>F</td><td>Vitória</td><td>ES</td><td>R$ 6.900</td><td>35</td><td>1</td><td>R$ 310</td><td>Loja Física</td><td>Casa</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>16</td><td>26</td><td>M</td><td>Sorocaba</td><td>SP</td><td>R$ 3.100</td><td>12</td><td>3</td><td>R$ 140</td><td>App</td><td>Moda</td><td>3</td><td class="churn-nao">Não</td></tr>
+                <tr><td>17</td><td>57</td><td>F</td><td>Curitiba</td><td>PR</td><td>R$ 9.800</td><td>66</td><td>1</td><td>R$ 550</td><td>Loja Física</td><td>Decoração</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>18</td><td>33</td><td>M</td><td>Natal</td><td>RN</td><td>R$ 4.700</td><td>24</td><td>2</td><td>R$ 210</td><td>Online</td><td>Beleza</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>19</td><td>45</td><td>F</td><td>Goiânia</td><td>GO</td><td>R$ 7.200</td><td>42</td><td>1</td><td>R$ 360</td><td>Loja Física</td><td>Casa</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>20</td><td>19</td><td>M</td><td>Belo Horizonte</td><td>MG</td><td>R$ 1.900</td><td>3</td><td>5</td><td>R$ 70</td><td>App</td><td>Moda</td><td>1</td><td class="churn-sim">Sim</td></tr>
+                <tr><td>21</td><td>36</td><td>F</td><td>Maringá</td><td>PR</td><td>R$ 5.800</td><td>30</td><td>2</td><td>R$ 230</td><td>Online</td><td>Beleza</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>22</td><td>52</td><td>M</td><td>Uberlândia</td><td>MG</td><td>R$ 8.800</td><td>55</td><td>1</td><td>R$ 480</td><td>Loja Física</td><td>Decoração</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>23</td><td>27</td><td>F</td><td>Taubaté</td><td>SP</td><td>R$ 3.600</td><td>15</td><td>3</td><td>R$ 150</td><td>App</td><td>Moda</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>24</td><td>43</td><td>M</td><td>Limeira</td><td>SP</td><td>R$ 7.400</td><td>38</td><td>2</td><td>R$ 300</td><td>Online</td><td>Esportes</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>25</td><td>23</td><td>F</td><td>Sorocaba</td><td>SP</td><td>R$ 2.600</td><td>9</td><td>4</td><td>R$ 100</td><td>App</td><td>Moda</td><td>2</td><td class="churn-sim">Sim</td></tr>
+                <tr><td>26</td><td>47</td><td>M</td><td>Pelotas</td><td>RS</td><td>R$ 7.100</td><td>44</td><td>1</td><td>R$ 350</td><td>Loja Física</td><td>Casa</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>27</td><td>31</td><td>F</td><td>Blumenau</td><td>SC</td><td>R$ 5.100</td><td>25</td><td>2</td><td>R$ 220</td><td>Online</td><td>Beleza</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>28</td><td>58</td><td>M</td><td>Piracicaba</td><td>SP</td><td>R$ 10.200</td><td>68</td><td>1</td><td>R$ 560</td><td>Loja Física</td><td>Eletrônicos</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>29</td><td>34</td><td>F</td><td>Barueri</td><td>SP</td><td>R$ 6.000</td><td>29</td><td>2</td><td>R$ 250</td><td>Online</td><td>Eletrônicos</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>30</td><td>20</td><td>M</td><td>Diadema</td><td>SP</td><td>R$ 2.100</td><td>4</td><td>5</td><td>R$ 75</td><td>App</td><td>Moda</td><td>2</td><td class="churn-sim">Sim</td></tr>
+                <tr><td>31</td><td>41</td><td>F</td><td>São Carlos</td><td>SP</td><td>R$ 6.700</td><td>34</td><td>2</td><td>R$ 280</td><td>Online</td><td>Casa</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>32</td><td>53</td><td>M</td><td>Indaiatuba</td><td>SP</td><td>R$ 9.000</td><td>58</td><td>1</td><td>R$ 500</td><td>Loja Física</td><td>Decoração</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>33</td><td>28</td><td>F</td><td>Caruaru</td><td>PE</td><td>R$ 3.900</td><td>17</td><td>3</td><td>R$ 150</td><td>App</td><td>Beleza</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>34</td><td>46</td><td>M</td><td>Araçatuba</td><td>SP</td><td>R$ 7.600</td><td>41</td><td>1</td><td>R$ 360</td><td>Online</td><td>Eletrônicos</td><td>3</td><td class="churn-nao">Não</td></tr>
+                <tr><td>35</td><td>25</td><td>F</td><td>Guarulhos</td><td>SP</td><td>R$ 2.900</td><td>11</td><td>4</td><td>R$ 120</td><td>App</td><td>Moda</td><td>3</td><td class="churn-sim">Sim</td></tr>
+                <tr><td>36</td><td>61</td><td>M</td><td>Franca</td><td>SP</td><td>R$ 10.800</td><td>70</td><td>1</td><td>R$ 590</td><td>Loja Física</td><td>Casa</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>37</td><td>38</td><td>F</td><td>Maceió</td><td>AL</td><td>R$ 6.200</td><td>33</td><td>2</td><td>R$ 260</td><td>Online</td><td>Casa</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>38</td><td>49</td><td>M</td><td>Bauru</td><td>SP</td><td>R$ 8.000</td><td>46</td><td>1</td><td>R$ 390</td><td>Loja Física</td><td>Eletrônicos</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>39</td><td>22</td><td>F</td><td>Itaquaquecetuba</td><td>SP</td><td>R$ 2.400</td><td>6</td><td>5</td><td>R$ 85</td><td>App</td><td>Moda</td><td>2</td><td class="churn-sim">Sim</td></tr>
+                <tr><td>40</td><td>56</td><td>M</td><td>Londrina</td><td>PR</td><td>R$ 9.200</td><td>61</td><td>1</td><td>R$ 520</td><td>Loja Física</td><td>Decoração</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>41</td><td>30</td><td>F</td><td>Santo André</td><td>SP</td><td>R$ 4.800</td><td>21</td><td>2</td><td>R$ 210</td><td>Online</td><td>Beleza</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>42</td><td>45</td><td>M</td><td>São José dos Campos</td><td>SP</td><td>R$ 7.900</td><td>43</td><td>1</td><td>R$ 370</td><td>Loja Física</td><td>Eletrônicos</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>43</td><td>27</td><td>M</td><td>Mogi das Cruzes</td><td>SP</td><td>R$ 3.500</td><td>14</td><td>3</td><td>R$ 150</td><td>App</td><td>Moda</td><td>3</td><td class="churn-nao">Não</td></tr>
+                <tr><td>44</td><td>60</td><td>F</td><td>Jundiaí</td><td>SP</td><td>R$ 10.000</td><td>65</td><td>1</td><td>R$ 560</td><td>Loja Física</td><td>Casa</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>45</td><td>34</td><td>F</td><td>Araraquara</td><td>SP</td><td>R$ 6.100</td><td>28</td><td>2</td><td>R$ 240</td><td>Online</td><td>Beleza</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>46</td><td>23</td><td>M</td><td>Itu</td><td>SP</td><td>R$ 2.600</td><td>8</td><td>4</td><td>R$ 100</td><td>App</td><td>Moda</td><td>2</td><td class="churn-sim">Sim</td></tr>
+                <tr><td>47</td><td>51</td><td>F</td><td>Valinhos</td><td>SP</td><td>R$ 8.700</td><td>54</td><td>1</td><td>R$ 470</td><td>Loja Física</td><td>Decoração</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>48</td><td>39</td><td>M</td><td>Paulínia</td><td>SP</td><td>R$ 6.900</td><td>35</td><td>2</td><td>R$ 280</td><td>Online</td><td>Eletrônicos</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>49</td><td>28</td><td>F</td><td>Pindamonhangaba</td><td>SP</td><td>R$ 3.800</td><td>16</td><td>3</td><td>R$ 160</td><td>App</td><td>Beleza</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>50</td><td>63</td><td>M</td><td>Avaré</td><td>SP</td><td>R$ 11.200</td><td>74</td><td>1</td><td>R$ 610</td><td>Loja Física</td><td>Casa</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>51</td><td>21</td><td>F</td><td>Taboão da Serra</td><td>SP</td><td>R$ 2.200</td><td>4</td><td>5</td><td>R$ 80</td><td>App</td><td>Moda</td><td>2</td><td class="churn-sim">Sim</td></tr>
+                <tr><td>52</td><td>42</td><td>M</td><td>Bragança Paulista</td><td>SP</td><td>R$ 7.200</td><td>39</td><td>2</td><td>R$ 300</td><td>Online</td><td>Esportes</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>53</td><td>35</td><td>F</td><td>Atibaia</td><td>SP</td><td>R$ 5.900</td><td>27</td><td>2</td><td>R$ 230</td><td>Online</td><td>Beleza</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>54</td><td>26</td><td>M</td><td>Poá</td><td>SP</td><td>R$ 3.100</td><td>12</td><td>3</td><td>R$ 140</td><td>App</td><td>Moda</td><td>3</td><td class="churn-nao">Não</td></tr>
+                <tr><td>55</td><td>58</td><td>F</td><td>Botucatu</td><td>SP</td><td>R$ 9.600</td><td>63</td><td>1</td><td>R$ 540</td><td>Loja Física</td><td>Decoração</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>56</td><td>47</td><td>M</td><td>Ourinhos</td><td>SP</td><td>R$ 7.800</td><td>45</td><td>1</td><td>R$ 380</td><td>Online</td><td>Eletrônicos</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>57</td><td>32</td><td>F</td><td>Itapetininga</td><td>SP</td><td>R$ 5.200</td><td>24</td><td>2</td><td>R$ 220</td><td>Online</td><td>Beleza</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>58</td><td>19</td><td>M</td><td>Carapicuíba</td><td>SP</td><td>R$ 2.000</td><td>3</td><td>5</td><td>R$ 70</td><td>App</td><td>Moda</td><td>1</td><td class="churn-sim">Sim</td></tr>
+                <tr><td>59</td><td>44</td><td>F</td><td>Catanduva</td><td>SP</td><td>R$ 7.400</td><td>38</td><td>2</td><td>R$ 300</td><td>Online</td><td>Casa</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>60</td><td>55</td><td>M</td><td>Presidente Prudente</td><td>SP</td><td>R$ 8.900</td><td>57</td><td>1</td><td>R$ 490</td><td>Loja Física</td><td>Eletrônicos</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>61</td><td>33</td><td>F</td><td>Lins</td><td>SP</td><td>R$ 5.600</td><td>26</td><td>2</td><td>R$ 230</td><td>Online</td><td>Beleza</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>62</td><td>41</td><td>M</td><td>Tatuí</td><td>SP</td><td>R$ 6.700</td><td>34</td><td>2</td><td>R$ 280</td><td>Online</td><td>Esportes</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>63</td><td>24</td><td>F</td><td>Registro</td><td>SP</td><td>R$ 2.700</td><td>9</td><td>4</td><td>R$ 110</td><td>App</td><td>Moda</td><td>2</td><td class="churn-sim">Sim</td></tr>
+                <tr><td>64</td><td>52</td><td>M</td><td>Votorantim</td><td>SP</td><td>R$ 8.600</td><td>55</td><td>1</td><td>R$ 470</td><td>Loja Física</td><td>Decoração</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>65</td><td>37</td><td>F</td><td>Itapeva</td><td>SP</td><td>R$ 6.100</td><td>31</td><td>2</td><td>R$ 260</td><td>Online</td><td>Casa</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>66</td><td>29</td><td>M</td><td>Salto</td><td>SP</td><td>R$ 4.200</td><td>18</td><td>3</td><td>R$ 160</td><td>App</td><td>Esportes</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>67</td><td>46</td><td>F</td><td>Jaboticabal</td><td>SP</td><td>R$ 7.500</td><td>42</td><td>1</td><td>R$ 360</td><td>Loja Física</td><td>Casa</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>68</td><td>21</td><td>M</td><td>Cotia</td><td>SP</td><td>R$ 2.300</td><td>5</td><td>5</td><td>R$ 80</td><td>App</td><td>Moda</td><td>2</td><td class="churn-sim">Sim</td></tr>
+                <tr><td>69</td><td>59</td><td>F</td><td>Barretos</td><td>SP</td><td>R$ 9.800</td><td>67</td><td>1</td><td>R$ 560</td><td>Loja Física</td><td>Decoração</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>70</td><td>34</td><td>M</td><td>Itanhaém</td><td>SP</td><td>R$ 5.800</td><td>27</td><td>2</td><td>R$ 230</td><td>Online</td><td>Eletrônicos</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>71</td><td>27</td><td>F</td><td>Amparo</td><td>SP</td><td>R$ 3.600</td><td>14</td><td>3</td><td>R$ 150</td><td>App</td><td>Moda</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>72</td><td>48</td><td>M</td><td>Matão</td><td>SP</td><td>R$ 7.900</td><td>44</td><td>1</td><td>R$ 380</td><td>Loja Física</td><td>Eletrônicos</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>73</td><td>31</td><td>F</td><td>Capivari</td><td>SP</td><td>R$ 5.100</td><td>23</td><td>2</td><td>R$ 220</td><td>Online</td><td>Beleza</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>74</td><td>20</td><td>M</td><td>Embu das Artes</td><td>SP</td><td>R$ 2.100</td><td>4</td><td>5</td><td>R$ 75</td><td>App</td><td>Moda</td><td>2</td><td class="churn-sim">Sim</td></tr>
+                <tr><td>75</td><td>54</td><td>F</td><td>Itapira</td><td>SP</td><td>R$ 9.000</td><td>59</td><td>1</td><td>R$ 510</td><td>Loja Física</td><td>Decoração</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>76</td><td>38</td><td>M</td><td>Mogi Mirim</td><td>SP</td><td>R$ 6.500</td><td>33</td><td>2</td><td>R$ 260</td><td>Online</td><td>Esportes</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>77</td><td>25</td><td>F</td><td>Monte Mor</td><td>SP</td><td>R$ 2.900</td><td>11</td><td>4</td><td>R$ 120</td><td>App</td><td>Moda</td><td>3</td><td class="churn-sim">Sim</td></tr>
+                <tr><td>78</td><td>61</td><td>M</td><td>Dracena</td><td>SP</td><td>R$ 10.800</td><td>71</td><td>1</td><td>R$ 590</td><td>Loja Física</td><td>Casa</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>79</td><td>36</td><td>F</td><td>Piedade</td><td>SP</td><td>R$ 6.000</td><td>30</td><td>2</td><td>R$ 240</td><td>Online</td><td>Beleza</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>80</td><td>49</td><td>M</td><td>Cravinhos</td><td>SP</td><td>R$ 8.100</td><td>47</td><td>1</td><td>R$ 390</td><td>Loja Física</td><td>Eletrônicos</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>81</td><td>22</td><td>F</td><td>Suzano</td><td>SP</td><td>R$ 2.400</td><td>6</td><td>5</td><td>R$ 85</td><td>App</td><td>Moda</td><td>2</td><td class="churn-sim">Sim</td></tr>
+                <tr><td>82</td><td>56</td><td>M</td><td>Bebedouro</td><td>SP</td><td>R$ 9.300</td><td>62</td><td>1</td><td>R$ 520</td><td>Loja Física</td><td>Decoração</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>83</td><td>40</td><td>F</td><td>Lençóis Paulista</td><td>SP</td><td>R$ 6.800</td><td>35</td><td>2</td><td>R$ 280</td><td>Online</td><td>Casa</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>84</td><td>28</td><td>M</td><td>Guaratinguetá</td><td>SP</td><td>R$ 4.000</td><td>17</td><td>3</td><td>R$ 150</td><td>App</td><td>Esportes</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>85</td><td>47</td><td>F</td><td>Mococa</td><td>SP</td><td>R$ 7.600</td><td>43</td><td>1</td><td>R$ 360</td><td>Loja Física</td><td>Casa</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>86</td><td>19</td><td>M</td><td>Ferraz de Vasconcelos</td><td>SP</td><td>R$ 1.900</td><td>3</td><td>5</td><td>R$ 70</td><td>App</td><td>Moda</td><td>1</td><td class="churn-sim">Sim</td></tr>
+                <tr><td>87</td><td>53</td><td>F</td><td>Orlândia</td><td>SP</td><td>R$ 8.800</td><td>56</td><td>1</td><td>R$ 480</td><td>Loja Física</td><td>Decoração</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>88</td><td>35</td><td>M</td><td>Artur Nogueira</td><td>SP</td><td>R$ 6.100</td><td>28</td><td>2</td><td>R$ 240</td><td>Online</td><td>Eletrônicos</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>89</td><td>26</td><td>F</td><td>Boituva</td><td>SP</td><td>R$ 3.200</td><td>13</td><td>3</td><td>R$ 140</td><td>App</td><td>Moda</td><td>3</td><td class="churn-nao">Não</td></tr>
+                <tr><td>90</td><td>62</td><td>M</td><td>Pederneiras</td><td>SP</td><td>R$ 11.000</td><td>73</td><td>1</td><td>R$ 600</td><td>Loja Física</td><td>Casa</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>91</td><td>34</td><td>F</td><td>Ibitinga</td><td>SP</td><td>R$ 5.900</td><td>27</td><td>2</td><td>R$ 230</td><td>Online</td><td>Beleza</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>92</td><td>45</td><td>M</td><td>Mirassol</td><td>SP</td><td>R$ 7.800</td><td>41</td><td>1</td><td>R$ 370</td><td>Loja Física</td><td>Eletrônicos</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>93</td><td>23</td><td>F</td><td>Campo Limpo Paulista</td><td>SP</td><td>R$ 2.600</td><td>9</td><td>4</td><td>R$ 100</td><td>App</td><td>Moda</td><td>2</td><td class="churn-sim">Sim</td></tr>
+                <tr><td>94</td><td>58</td><td>M</td><td>São Manuel</td><td>SP</td><td>R$ 9.600</td><td>64</td><td>1</td><td>R$ 540</td><td>Loja Física</td><td>Decoração</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>95</td><td>39</td><td>F</td><td>Jales</td><td>SP</td><td>R$ 6.900</td><td>34</td><td>2</td><td>R$ 280</td><td>Online</td><td>Casa</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>96</td><td>29</td><td>M</td><td>Cajamar</td><td>SP</td><td>R$ 4.200</td><td>18</td><td>3</td><td>R$ 160</td><td>App</td><td>Esportes</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>97</td><td>51</td><td>F</td><td>Tupã</td><td>SP</td><td>R$ 8.500</td><td>52</td><td>1</td><td>R$ 470</td><td>Loja Física</td><td>Decoração</td><td>5</td><td class="churn-nao">Não</td></tr>
+                <tr><td>98</td><td>21</td><td>M</td><td>Francisco Morato</td><td>SP</td><td>R$ 2.200</td><td>5</td><td>5</td><td>R$ 80</td><td>App</td><td>Moda</td><td>2</td><td class="churn-sim">Sim</td></tr>
+                <tr><td>99</td><td>44</td><td>F</td><td>Paraguaçu Paulista</td><td>SP</td><td>R$ 7.400</td><td>38</td><td>2</td><td>R$ 300</td><td>Online</td><td>Casa</td><td>4</td><td class="churn-nao">Não</td></tr>
+                <tr><td>100</td><td>55</td><td>M</td><td>Adamantina</td><td>SP</td><td>R$ 9.000</td><td>57</td><td>1</td><td>R$ 500</td><td>Loja Física</td><td>Eletrônicos</td><td>5</td><td class="churn-nao">Não</td></tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
